@@ -1,0 +1,467 @@
+/*Globales*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #242428;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Header*/
+header {
+    background-image: url(../imagenes/Fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20rem;
+    padding-top: 5rem;
+}
+
+/*Navegación*/
+nav {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+nav span {
+    color:white;
+    margin-right: 40rem;
+    font-size: 2.5rem;
+    padding: 14px 16px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    font-size: 2.5rem;
+}
+
+nav li a:hover,
+nav span:hover {
+    background-color: black;
+    border-radius: 1rem;
+}
+
+/*Portada*/
+.portada {
+    text-align: center;
+    color: white;
+    margin-top: 15rem;
+}
+
+.portada h1 {
+    font-size: 6rem;
+}
+
+.portada p {
+    font-size: 2.3rem;
+}
+
+.button {
+    background-color: #f4c37c;
+    padding: 2rem 10rem;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-weight: 700;
+    margin-top: 10rem;
+}
+
+.button a {
+    color: black;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.button:hover a {
+    color: white;
+}
+
+/*Our Story*/
+.story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8rem;
+    margin: 10rem 0;
+}
+
+.story__images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.imagen {
+    width: 20rem;
+    height: 23rem;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.columna-izquierda {
+    margin-top: 40px;
+}
+
+.story__texto {
+    width: 60rem;
+    height: 50rem;
+    font-size: 2.7rem;
+}
+
+.story h2 {
+    color: #f4c37c;
+    font-size: 7rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+}
+
+.story p {
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+.story a {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/*Special*/
+.special__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.special__texto h2 {
+    color: #f4c37c;
+    font-weight: 700;
+    font-size: 7rem;
+    margin-bottom: 0rem;
+}
+
+.special__texto p {
+    color: white;
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+.special__pedidos {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+}
+
+.special__description {
+    padding: 0 3rem 1rem 3rem;
+    width: 40rem;
+    height: 25rem;
+    font-size: 2.7rem;
+}
+
+.minutes {
+    margin-left: 1rem;
+}
+
+.pedidos {
+    color: white;
+    background-color: #3c3c3c;
+    border-radius: 1rem;
+    width: 40rem;
+    height: 60rem;
+    margin: 3rem 0;
+}
+
+.pedidos img {
+    width: 40rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.button__special a {
+    color: #f4c37c;
+    border-bottom: solid 1px #f4c37c;
+    margin-left: 2rem;
+}
+
+/*Discover*/
+.discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+}
+
+.discover__texto {
+    color: white;
+    width: 60rem;
+}
+
+.discover__texto h2 {
+    color: #f4c37c;
+    font-weight: 700;
+    font-size: 7rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    line-height: 7rem;
+}
+
+.discover__texto p {
+    font-size: 2.7rem;
+}
+
+.discover__button {
+    background-color: #f4c37c;
+    padding: 2rem 10rem;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+.discover__button a {
+    color: black;
+}
+
+.discover__button:hover {
+    background-color: black;
+}
+
+.discover__button:hover a {
+    color: white;
+}
+
+.discover img {
+    width: 60rem;
+    height: 80rem;
+}
+
+/*Comments*/
+.comments {
+    background-image: url(../imagenes/Fondo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.comments__texto h2 {
+    color: #f4c37c;
+    text-align: center;
+    font-weight: 700;
+    font-size: 7rem;
+    padding: 13rem 20rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.comments__people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    padding-bottom: 13rem;
+}
+
+.comments__people img {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 50%;
+}
+
+.comments__people p {
+    color: white;
+    width: 70rem;
+    font-size: 2.7rem;
+}
+
+/*Chefs*/
+.chefs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    column-gap: 3rem;
+    margin: 2rem 0;
+}
+
+.chefs__cv p {
+    font-weight: 700;
+}
+
+.chefs__cv p,
+.chefs__cv span {
+    font-size: 2.7rem;
+}
+
+.chefs__cv img {
+    width: 40rem;
+    height: 50rem;
+    border-radius: 1rem;
+}
+
+/*Gallery*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem; /* Espacio entre las imágenes */
+    padding: 20px; /* Añadido un relleno para mejorar la apariencia */ 
+}
+
+.gallery__images {
+    flex: 1 1 30%; /* Establece el tamaño y la proporción deseada */
+}
+
+.gallery__images img {
+    border-radius: 2rem;
+}
+
+img {
+    width: 100%; /* Asegura que las imágenes ocupen el ancho completo del contenedor */
+    height: 100%; /* Hace que las imágenes ocupen todo el alto del contenedor */
+    object-fit: cover; /* Mantiene la relación de aspecto y cubre todo el contenedor */
+}
+
+.vertical1,
+.vertical2 {
+    width: 100%;
+    height: 80%;
+}
+
+.horizontal1,
+.horizontal2 {
+    width: 100%;
+    height: 38.2%;
+}
+
+.horizontal1 {
+    margin-bottom: 3rem;
+}
+
+/*Footer*/
+footer {
+    background-color: #181414;
+    color: white;
+    text-align: left;
+    padding: 5rem;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas con ancho igual */
+    grid-template-rows: repeat(3, 1fr); /* 3 filas con altura igual */
+    gap: 2rem; /* Espacio entre las celdas */
+    width: 80rem;
+    place-content: center;
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.footer span:nth-child(8) {
+    width: 50rem;
+}
+
+.footer span:nth-child(1) {
+    font-weight: 700;
+}
+
+.footer span {
+    padding: 10px;
+    width: 30rem;
+    margin-right: 2rem;
+}
+
+.footer span:nth-child(12) {
+    width: 35rem;
+}
+
+.container {
+    display: flex;
+    width: 90rem;
+}
+
+.container input::placeholder {
+    color: #7b7b7b;
+    font-size: 2.5rem;
+}
+
+.container input {
+    padding: 10px;
+    border: 0.5px solid #ccc;
+    border-right: none;
+    width: 30rem;
+    box-sizing: border-box;
+    font-size: 2.5rem;
+    background-color: #282424;
+    color: white;
+    border-radius: 0;
+}
+
+.container button {
+    padding: 10px 15px;
+    border: 0.5px solid #ccc;
+    border-left: none;
+    background-color: #f4c37c;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.container button a {
+    color: black;
+    font-size: 3rem;
+}
+
+.container button:hover {
+    background-color: black;
+}
+
+.container button:hover a {
+    color: white;
+}
